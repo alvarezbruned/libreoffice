@@ -1,11 +1,11 @@
 version: '2'
 services:
   libreoffice:
-#    image: ''
-    build: .
+    image: 'albertalvarezbruned/libreoffice'
     container_name: 'libreoffice'
     volumes:
       - '/tmp/.X11-unix:/tmp/.X11-unix'
       - '/Users/albertojorgealvarezbruned/Documents/ubuntu_netbeans/home:/home/libreofficeuser/home'
     environment:
-      - DISPLAY=$DISPLAY_MAC
+      - DISPLAY=unix$DISPLAY
+    #  - DISPLAY=$DISPLAY_MAC
