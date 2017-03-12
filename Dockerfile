@@ -1,12 +1,13 @@
-FROM ubuntu:wily
+#FROM ubuntu:wily
+FROM jess/libreoffice
 MAINTAINER Albert Alvarez
 
 RUN locale-gen es_ES.UTF-8
 ENV LANG='es_ES.UTF-8' LANGUAGE='es_ES:es' LC_ALL='es_ES.UTF-8'
 
-RUN apt-get update && apt-get upgrade -y		
+#RUN apt-get update && apt-get upgrade -y		
 		
-RUN apt-get install libreoffice-writer -y		
+#RUN apt-get install libreoffice-writer -y		
 # software-properties-common -y		
 		
 #RUN mkdir -p /home/libreofficeuser		
@@ -17,4 +18,4 @@ RUN apt-get install libreoffice-writer -y
 #USER libreofficeuser		
 #ENV HOME /home/libreofficeuser		
 
-CMD libreoffice
+#CMD libreoffice
