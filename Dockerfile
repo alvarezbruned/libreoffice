@@ -1,7 +1,7 @@
 FROM ubuntu:bionic
 MAINTAINER Albert Alvarez
 
-RUN locale-gen es_ES.UTF-8
+#RUN locale-gen es_ES.UTF-8
 ENV LANG='es_ES.UTF-8' LANGUAGE='es_ES:es' LC_ALL='es_ES.UTF-8'
 
 RUN apt-get update
