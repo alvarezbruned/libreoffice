@@ -33,6 +33,6 @@ RUN apt-get install -y libreoffice
 #RUN apt-get -y install -f --no-install-recommends
 #
 #RUN rm -fR /tmp/*
-
+RUN apt-get install libreoffice-sdbc-postgresql -y
 
 CMD libreoffice
