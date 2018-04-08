@@ -1,4 +1,4 @@
-FROM ubuntu:wily
+FROM ubuntu:bionic
 MAINTAINER Albert Alvarez
 
 RUN locale-gen es_ES.UTF-8
