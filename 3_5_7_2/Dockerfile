@@ -34,5 +34,6 @@ RUN apt-get install -y libreoffice
 #
 #RUN rm -fR /tmp/*
 RUN apt-get install libreoffice-sdbc-postgresql -y
+RUN apt-get install -y unixodbc-dev libmyodbc
 
 CMD libreoffice
