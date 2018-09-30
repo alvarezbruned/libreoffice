@@ -12,6 +12,8 @@ RUN add-apt-repository -y ppa:libreoffice/ppa
 RUN apt-get update
 RUN apt-get install -y libreoffice
 
+RUN apt-get remove libreoffice-gnome -y
+
 
 
 
